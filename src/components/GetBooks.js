@@ -11,6 +11,11 @@ import Time from "./UuidToTime";
 import selectType from "./popups";
 import BoxLoading from "react-loadingg/lib/BoxLoading";
 import { DeleteBooks } from "./Delete";
+/**
+ *
+ * @param {object} -bokk's info
+ * @returns a card with book's info
+ */
 export const Book = ({
   id,
   name,
@@ -52,7 +57,10 @@ export const Book = ({
     </Card>
   );
 };
-//show books
+/**
+ *
+ * @returns show books
+ */
 const GetBooks = () => {
   const { files, loading, error } = useFiles();
   const { category } = useParams();

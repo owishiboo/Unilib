@@ -6,6 +6,11 @@ import { PutComments } from "../PutComments";
 import { Book } from "../GetBooks";
 import selectType from "../popups";
 import { BoxLoading } from "react-loadingg";
+/**
+ *
+ * @param {object} -an ojbect with value in the search field
+ * @returns
+ */
 const SearchBooks = ({ val }) => {
   const { data, loading, error } = useQuery(SEARCH_BOOKS, {
     variables: {
@@ -30,6 +35,11 @@ const SearchBooks = ({ val }) => {
     </div>
   );
 };
+/**
+ *
+ * @param {object} - an object with the search bar text
+ * @returns
+ */
 const SearchUser = ({ val }) => {
   const { data, loading, error, refetch } = useQuery(SEARCH_USER, {
     variables: {
@@ -60,6 +70,10 @@ const SearchUser = ({ val }) => {
     </div>
   );
 };
+/**
+ *
+ * @returns any type of search in forum
+ */
 export const SearchForum = () => {
   const [val, setVal] = useState("");
   const [show, setShow] = useState(true);

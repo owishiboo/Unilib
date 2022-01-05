@@ -7,7 +7,11 @@ import Sidebar from "../Sidebar";
 import BoxLoading from "react-loadingg/lib/BoxLoading";
 import selectType from "../popups";
 import { Col, Row } from "react-bootstrap";
-//type post insert
+/**
+ * type post insert
+ * @returns text field to insert post
+ */
+
 function TypePost() {
   const author_id = localStorage.getItem("id"); //hasura_id
   console.log(author_id);
@@ -65,6 +69,11 @@ function TypePost() {
     </Row>
   );
 }
+/**
+ *
+ * @param {Object} -an object with the post and postid
+ * @returns the changes after edit
+ */
 export function EditPost({ messageBefore, postid }) {
   const [showWarning, setShowWarning] = useState("");
   const [showForm, setshowForm] = useState(true);

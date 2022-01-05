@@ -1,4 +1,9 @@
 import "../styles/Fonts.css";
+/**
+ *
+ * @param {Time} -the time string fetched from db
+ * @returns in a readable form of time
+ */
 const Time = ({ time, caption }) => {
   const date = new Date(time);
   console.log(time);

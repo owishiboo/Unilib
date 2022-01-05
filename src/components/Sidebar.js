@@ -19,6 +19,11 @@ const ShowCatInSidebar = ({ name, id }) => {
     </Link>
   );
 };
+/**
+ *
+ * @param {object} -user type for showing different sidebars
+ * @returns the sidebar
+ */
 const Sidebar = ({ user_id, type, pageid }) => {
   const { data, loading, error } = useQuery(GET_CATAGORIES_QUERY);
   if (type === "1") {

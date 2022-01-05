@@ -1,4 +1,10 @@
 import Swal from "sweetalert2";
+/**
+ *
+ * @param {string} type - the type of a message
+ * @param {string} htmlType -a small message
+ * @returns a popup notification
+ */
 const selectType = (type, htmlType) => {
   if (type === "success") {
     const html = `You can get your ${htmlType} in <b></b> milliseconds.`;

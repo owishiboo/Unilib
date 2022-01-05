@@ -9,6 +9,9 @@ import "../styles/Forum.css";
 import "../styles/Sidebar.css";
 import selectType from "./popups";
 import BoxLoading from "react-loadingg/lib/BoxLoading";
+/**
+ * @returns the whole function of uploading a pdf in firebase
+ */
 const UploadPDFs = ({ user_id }) => {
   const [show, setShow] = useState(false);
   const [val, setVal] = useState({ name: "Select Category" });

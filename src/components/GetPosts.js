@@ -11,7 +11,11 @@ import "../styles/Sidebar.css";
 import { Button } from "react-bootstrap";
 import { DeletePosts } from "./Delete";
 
-//show posts
+/**
+ *
+ * @param {object} -Post's details
+ * @returns shows single post
+ */
 export const Post = ({
   author,
   message,
@@ -73,7 +77,11 @@ export const Post = ({
     </div>
   );
 };
-//fetch posts
+/**
+ *
+ * @param {object} the id of the commenter
+ * @returns fetch posts
+ */
 const GetPosts = ({ commenter_id }) => {
   const { data, loading, error, refetch } = useQuery(GET_POSTS_QUERY);
   if (loading) return <BoxLoading />;

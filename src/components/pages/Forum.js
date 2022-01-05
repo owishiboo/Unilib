@@ -3,6 +3,10 @@ import Sidebar from "../Sidebar";
 import "../../styles/Sidebar.css";
 import { Col, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+/**
+ *
+ * @returns the forum page
+ */
 function Forum() {
   const hasura_id = localStorage.getItem("id");
   return (

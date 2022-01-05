@@ -5,6 +5,11 @@ import { DELETE_BOOK, DELETE_POST } from "../database/Mutations";
 import BoxLoading from "react-loadingg/lib/BoxLoading";
 import { useState } from "react";
 import selectType from "./popups";
+/**
+ *
+ * @param {object} - the uuid of the post
+ * @returns deletes the post
+ */
 export const DeletePosts = ({ postid }) => {
   const [deletePost, { loading, error }] = useMutation(DELETE_POST);
   const [show, setShow] = useState(false);
@@ -47,6 +52,11 @@ export const DeletePosts = ({ postid }) => {
     </>
   );
 };
+/**
+ *
+ * @param {object} -the uuid of the book and the firebase link
+ * @returns deletes the book
+ */
 export const DeleteBooks = ({ id, link }) => {
   const [DeleteBook, { loading, error }] = useMutation(DELETE_BOOK);
   const [show, setShow] = useState(false);

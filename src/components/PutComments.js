@@ -8,7 +8,11 @@ import Time from "./UuidToTime";
 import "../styles/Forum.css";
 import "../styles/Comment.css";
 import "../styles/Sidebar.css";
-//show comment
+/**
+ *
+ * @param {Object} -commenter's info
+ * @returns a signle comment
+ */
 const Comment = ({ replier, reply, commented_at, registration }) => {
   return (
     <div class="container-fluid mt-2 text-start">
@@ -44,7 +48,11 @@ const Comment = ({ replier, reply, commented_at, registration }) => {
     </div>
   );
 };
-//type to comment
+/**
+ *
+ * @param {Object} -postid, the commenter, and refetch to show again without refreshing the page
+ * @returns type to comment
+ */
 export const TypeComment = ({ post, refetch, commenter_id }) => {
   const [postComment, { error, loading }] = useMutation(POST_COMMENT);
   if (loading) return <BoxLoading />;
@@ -84,7 +92,11 @@ export const TypeComment = ({ post, refetch, commenter_id }) => {
     </div>
   );
 };
-//insert comment
+/**
+ *
+ * @param {object} -each posts with pending comments
+ * @returns insert comment
+ */
 export const PutComments = ({ post, refetch, commenter_id }) => {
   const [show, setShow] = useState(false);
   const [buttonText, setButtontext] = useState("Show comments");

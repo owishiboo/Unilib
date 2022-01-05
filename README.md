@@ -149,4 +149,32 @@ Implemented Features:
 
 <p align="center">
 <small>&copy; 2021 - Dept. of CSE, SUST, BD</small>
-</p>
+</p> 
+
+
+
+## Contribution
+**Team member 1** – Nowshin Alam Owishi
+
+In 55% submission –
+
+Backend and frontend of Forum
+
+In 100% submission –
+
+1. Frontend of the whole project – 70%
+2. Backend and frontend of the Forum part
+
+**Team member 2** – Tahsina Bintay Azam
+
+In 55% submission –
+
+Backend and frontend except Forum
+
+In 100% submission –
+
+1. Frontend of the whole project – 30%
+2. Backend except the Forum part
+
+It is a rough calculation of our contribution. Basically we participated and practiced more or less in every
+field as required. We couldn’t create an accurate picture as contributions are mixed up.
